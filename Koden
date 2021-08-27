@@ -1,0 +1,38 @@
+// Plant monitoring system
+
+/*
+Description of the code:
+This code is meant for the Plant monitoring system.
+The LED lights will function as a feedback from the system
+and are supposed to be green, yellow and red. Just like a traffic light.
+The LED-lights are connected in this manner:
+Red = Pin ? (not decided)
+Yellow = Pin ? 
+Green = Pin ? 
+
+*/
+
+// Constants
+
+int LEDred = ?;
+int LEDyellow = ?;
+int LEDgreen = ?;
+
+int TVm = 40; //Minimum treshold value for soil moisture, unknown
+int TVmax = 70; //Maximum treshold value for soil moisture, unknown
+
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200); // Defining Baud rate. 115200 baud is chosen.
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+digitalWrite(LEDred, HIGH); // Turn on if feedback of an error is necessary
+digitalWrite(LEDyellow, HIGH);// Turn on if the treshold values has been reached.
+digitalWrite(LEDgreen, HIGH); //Turn on if the program does not find anything wrong.
+
+}
